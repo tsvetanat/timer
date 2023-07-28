@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Homework</title>
+</head>
+<body style="background-color: bisque;display: grid;">
+ 
+  <style>
+        .container {
+            height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+        }
+   
+         .container-stopwatch{
+            width: fit-content;
+            padding: 3rem;
+            text-align: center;
+            border-radius: .5rem;
+            box-shadow: 0 0 10px black;
+            margin: auto;
+         }
+         .stopwatch-display{
+             background: rgba(22, 97, 12, 0.5);
+             padding: 6rem;
+             font-weight: bold;
+             box-sizing: border-box;
+             font-size: 2rem;
+             margin-bottom: 1rem;
+         }
+         .stopwatch-display span{
+             font-size: 2rem;
+         }
+         .stopwatch-control button{
+             text-transform: uppercase;
+             color: white;
+             background: rgba(0, 0, 0, 0.829);
+             border: none;
+             cursor:	grab;
+         }
+         .stopwatch-control button:nth-child(2){
+             margin: 0 .5rem;
+         }
+
+         .black{
+             background: black;
+         }
+         .silver{
+             background: rgba(88, 88, 88, .5);
+         }
+         .red{
+             background: rgba(231, 40, 40, 0.5);
+         }
+         .green{
+             background: rgba(39, 211, 76, 0.5);
+         }
+
+ </style>
+         
+ <div class = container>
+    <div class="container-stopwatch black">
+        <div class="stopwatch-display"><span>00</span>:<span>00</span>:<span>00</span></div>
+        <div class="stopwatch-control"><button>Start</button><button>Stop</button><button>Reset</button></div>
+    </div>
+ </div>
+ 
+ 
+
+</body>
+<script src="./JS/script.js"></script>
+</html>
