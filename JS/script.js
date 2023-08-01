@@ -37,7 +37,7 @@ var div = document.querySelector(".stopwatch-display");
                 let h = parseInt(counter/216000);
                 let res = parseInt(counter-216000*h);
                 let m = parseInt(res/3600);
-                let s = parseInt((res - 3600*m)/120);
+                let s = parseInt((res - 3600*m)/60);
                 
                 function makeTwoDigits(n){
                     return (n < 10 ? "0" : "") + n;
