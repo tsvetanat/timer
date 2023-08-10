@@ -35,7 +35,7 @@ const count = () => {
     let h = parseInt(counter/216000);
     let res = parseInt(counter-216000*h);
     let m = parseInt(res/3600);
-    let s = parseInt((res - 3600*m)/90);
+    let s = parseInt((res - 3600*m)/60);
                 
     function getTwoDigits(n){
     return (n < 10 ? "0" : "") + n;
